@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import IJReachability
 import SDWebImage
-
+import Social
 
 class GagTableViewController: UITableViewController {
     
@@ -60,7 +60,6 @@ class GagTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-    
         let cell = tableView.dequeueReusableCellWithIdentifier("customCell", forIndexPath: indexPath) as! CustomTableViewCell
         
         
@@ -71,6 +70,7 @@ class GagTableViewController: UITableViewController {
         
         let url = NSURL(string: gagItem.gagThumb as String)
         cell.thumbImageView?.sd_setImageWithURL(url, placeholderImage: UIImage(named: "default.png"))
+        
         
         cell.scoreLabel.text = gagItem.gagScore as String + " 分"
         cell.commentsLabel.text = gagItem.gagComments as String + " 评论"
@@ -91,6 +91,15 @@ class GagTableViewController: UITableViewController {
     func footerRefresh(){
         self.loadDataSource(++self.DataPage)
         self.tableView.footer.endRefreshing()
+    }
+    
+    @IBAction func share(sender: AnyObject) {
+        
+        /*
+        var controller:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeSinaWeibo)
+        controller.setInitialText("一起来swift吧！")
+        controller.addImage(UIImage(named: "boluo"))
+        self.presentViewController(controller, animated: true, completion: nil)*/
     }
     
     func loadDataSource(page:Int){

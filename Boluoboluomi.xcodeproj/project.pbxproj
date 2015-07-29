@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121432E71B689FEE009073FE /* HZIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 121432E01B689FEE009073FE /* HZIndicatorView.m */; };
+		121432E81B689FEE009073FE /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 121432E21B689FEE009073FE /* HZPhotoBrowser.m */; };
+		121432E91B689FEE009073FE /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 121432E51B689FEE009073FE /* HZPhotoBrowserView.m */; };
+		121432EA1B689FEE009073FE /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 121432E61B689FEE009073FE /* whiteplaceholder.png */; };
+		121432F31B68AB84009073FE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 121432ED1B68AB84009073FE /* libWeChatSDK.a */; };
+		121432F41B68AB84009073FE /* WeChatActivityGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121432F01B68AB84009073FE /* WeChatActivityGeneral.swift */; };
+		121432F51B68AB84009073FE /* WeChatMomentsActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121432F11B68AB84009073FE /* WeChatMomentsActivity.swift */; };
+		121432F61B68AB84009073FE /* WeChatSessionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121432F21B68AB84009073FE /* WeChatSessionActivity.swift */; };
 		1216CE7D1B68867000B10DAD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1216CE7C1B68867000B10DAD /* Cartfile */; };
 		12BDFE781B67BA6E0068A1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFE771B67BA6E0068A1DC /* AppDelegate.swift */; };
 		12BDFE7A1B67BA6E0068A1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFE791B67BA6E0068A1DC /* ViewController.swift */; };
@@ -34,8 +42,6 @@
 		12BDFEF41B67BB0A0068A1DC /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFED71B67BB0A0068A1DC /* UIView+MJExtension.m */; };
 		12BDFEF51B67BB0A0068A1DC /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 12BDFED91B67BB0A0068A1DC /* ProgressHUD.bundle */; };
 		12BDFEF61B67BB0A0068A1DC /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFEDB1B67BB0A0068A1DC /* ProgressHUD.m */; };
-		12BDFEF71B67BB0A0068A1DC /* FDSlideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFEDF1B67BB0A0068A1DC /* FDSlideBar.m */; };
-		12BDFEF81B67BB0A0068A1DC /* FDSlideBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFEE11B67BB0A0068A1DC /* FDSlideBarItem.m */; };
 		12BDFEFB1B67BB460068A1DC /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFEFA1B67BB460068A1DC /* CommentsViewController.swift */; };
 		12BDFF001B67BB580068A1DC /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFEFC1B67BB580068A1DC /* DiscoverTableViewController.swift */; };
 		12BDFF011B67BB580068A1DC /* GagItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFEFD1B67BB580068A1DC /* GagItem.swift */; };
@@ -59,8 +65,22 @@
 
 /* Begin PBXFileReference section */
 		01B6A62EF1F9801EF1D32AF7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		121432DF1B689FEE009073FE /* HZIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZIndicatorView.h; sourceTree = "<group>"; };
+		121432E01B689FEE009073FE /* HZIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZIndicatorView.m; sourceTree = "<group>"; };
+		121432E11B689FEE009073FE /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
+		121432E21B689FEE009073FE /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
+		121432E31B689FEE009073FE /* HZPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		121432E41B689FEE009073FE /* HZPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserView.h; sourceTree = "<group>"; };
+		121432E51B689FEE009073FE /* HZPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowserView.m; sourceTree = "<group>"; };
+		121432E61B689FEE009073FE /* whiteplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteplaceholder.png; sourceTree = "<group>"; };
+		121432ED1B68AB84009073FE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		121432EE1B68AB84009073FE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		121432EF1B68AB84009073FE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		121432F01B68AB84009073FE /* WeChatActivityGeneral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatActivityGeneral.swift; sourceTree = "<group>"; };
+		121432F11B68AB84009073FE /* WeChatMomentsActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatMomentsActivity.swift; sourceTree = "<group>"; };
+		121432F21B68AB84009073FE /* WeChatSessionActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatSessionActivity.swift; sourceTree = "<group>"; };
 		1216CE7C1B68867000B10DAD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		12BDFE721B67BA6E0068A1DC /* Boluoboluomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boluoboluomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BDFE721B67BA6E0068A1DC /* 菠萝菠萝蜜.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "菠萝菠萝蜜.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BDFE761B67BA6E0068A1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12BDFE771B67BA6E0068A1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12BDFE791B67BA6E0068A1DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,10 +130,6 @@
 		12BDFED91B67BB0A0068A1DC /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		12BDFEDA1B67BB0A0068A1DC /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		12BDFEDB1B67BB0A0068A1DC /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
-		12BDFEDE1B67BB0A0068A1DC /* FDSlideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBar.h; sourceTree = "<group>"; };
-		12BDFEDF1B67BB0A0068A1DC /* FDSlideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBar.m; sourceTree = "<group>"; };
-		12BDFEE01B67BB0A0068A1DC /* FDSlideBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBarItem.h; sourceTree = "<group>"; };
-		12BDFEE11B67BB0A0068A1DC /* FDSlideBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBarItem.m; sourceTree = "<group>"; };
 		12BDFEF91B67BB460068A1DC /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 		12BDFEFA1B67BB460068A1DC /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		12BDFEFC1B67BB580068A1DC /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				121432F31B68AB84009073FE /* libWeChatSDK.a in Frameworks */,
 				E56CADC84A0A836CEAD1B191 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +163,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121432DE1B689FEE009073FE /* HZPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				121432DF1B689FEE009073FE /* HZIndicatorView.h */,
+				121432E01B689FEE009073FE /* HZIndicatorView.m */,
+				121432E11B689FEE009073FE /* HZPhotoBrowser.h */,
+				121432E21B689FEE009073FE /* HZPhotoBrowser.m */,
+				121432E31B689FEE009073FE /* HZPhotoBrowserConfig.h */,
+				121432E41B689FEE009073FE /* HZPhotoBrowserView.h */,
+				121432E51B689FEE009073FE /* HZPhotoBrowserView.m */,
+				121432E61B689FEE009073FE /* whiteplaceholder.png */,
+			);
+			name = HZPhotoBrowser;
+			path = MJRefresh/HZPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		121432EB1B68AB84009073FE /* WeChatSharing */ = {
+			isa = PBXGroup;
+			children = (
+				121432EC1B68AB84009073FE /* Resources */,
+				121432F01B68AB84009073FE /* WeChatActivityGeneral.swift */,
+				121432F11B68AB84009073FE /* WeChatMomentsActivity.swift */,
+				121432F21B68AB84009073FE /* WeChatSessionActivity.swift */,
+			);
+			path = WeChatSharing;
+			sourceTree = "<group>";
+		};
+		121432EC1B68AB84009073FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				121432ED1B68AB84009073FE /* libWeChatSDK.a */,
+				121432EE1B68AB84009073FE /* WXApi.h */,
+				121432EF1B68AB84009073FE /* WXApiObject.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		12BDFE691B67BA6E0068A1DC = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +216,7 @@
 		12BDFE731B67BA6E0068A1DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12BDFE721B67BA6E0068A1DC /* Boluoboluomi.app */,
+				12BDFE721B67BA6E0068A1DC /* 菠萝菠萝蜜.app */,
 				12BDFE871B67BA6E0068A1DC /* BoluoboluomiTests.xctest */,
 			);
 			name = Products;
@@ -172,9 +226,10 @@
 			isa = PBXGroup;
 			children = (
 				12BDFE771B67BA6E0068A1DC /* AppDelegate.swift */,
+				121432DE1B689FEE009073FE /* HZPhotoBrowser */,
 				12BDFEAB1B67BB0A0068A1DC /* MJRefresh */,
 				12BDFED81B67BB0A0068A1DC /* ProgressHUD */,
-				12BDFEDC1B67BB0A0068A1DC /* SDWebImage */,
+				121432EB1B68AB84009073FE /* WeChatSharing */,
 				12BDFE791B67BA6E0068A1DC /* ViewController.swift */,
 				12BDFEF91B67BB460068A1DC /* bridge.h */,
 				12BDFF081B67BBBA0068A1DC /* Main.storyboard */,
@@ -319,25 +374,6 @@
 			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
-		12BDFEDC1B67BB0A0068A1DC /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				12BDFEDD1B67BB0A0068A1DC /* FDSlideBar */,
-			);
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		12BDFEDD1B67BB0A0068A1DC /* FDSlideBar */ = {
-			isa = PBXGroup;
-			children = (
-				12BDFEDE1B67BB0A0068A1DC /* FDSlideBar.h */,
-				12BDFEDF1B67BB0A0068A1DC /* FDSlideBar.m */,
-				12BDFEE01B67BB0A0068A1DC /* FDSlideBarItem.h */,
-				12BDFEE11B67BB0A0068A1DC /* FDSlideBarItem.m */,
-			);
-			path = FDSlideBar;
-			sourceTree = "<group>";
-		};
 		57AE4C31FF9A54FE277B36E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,7 +411,7 @@
 			);
 			name = Boluoboluomi;
 			productName = Boluoboluomi;
-			productReference = 12BDFE721B67BA6E0068A1DC /* Boluoboluomi.app */;
+			productReference = 12BDFE721B67BA6E0068A1DC /* 菠萝菠萝蜜.app */;
 			productType = "com.apple.product-type.application";
 		};
 		12BDFE861B67BA6E0068A1DC /* BoluoboluomiTests */ = {
@@ -441,6 +477,7 @@
 				12BDFF091B67BBBA0068A1DC /* Main.storyboard in Resources */,
 				1216CE7D1B68867000B10DAD /* Cartfile in Resources */,
 				12BDFE821B67BA6E0068A1DC /* LaunchScreen.xib in Resources */,
+				121432EA1B689FEE009073FE /* whiteplaceholder.png in Resources */,
 				12BDFEF51B67BB0A0068A1DC /* ProgressHUD.bundle in Resources */,
 				12BDFF071B67BB970068A1DC /* Images.xcassets in Resources */,
 				12BDFEAA1B67BADF0068A1DC /* Podfile in Resources */,
@@ -512,15 +549,17 @@
 			files = (
 				12BDFF051B67BB600068A1DC /* SettingTableViewController.swift in Sources */,
 				12BDFEF21B67BB0A0068A1DC /* UIScrollView+MJExtension.m in Sources */,
+				121432F51B68AB84009073FE /* WeChatMomentsActivity.swift in Sources */,
+				121432E81B689FEE009073FE /* HZPhotoBrowser.m in Sources */,
 				12BDFE7A1B67BA6E0068A1DC /* ViewController.swift in Sources */,
+				121432F61B68AB84009073FE /* WeChatSessionActivity.swift in Sources */,
 				12BDFEEF1B67BB0A0068A1DC /* MJRefreshStateHeader.m in Sources */,
+				121432E71B689FEE009073FE /* HZIndicatorView.m in Sources */,
 				12BDFF001B67BB580068A1DC /* DiscoverTableViewController.swift in Sources */,
 				12BDFEF61B67BB0A0068A1DC /* ProgressHUD.m in Sources */,
 				12BDFEE21B67BB0A0068A1DC /* MJRefreshAutoFooter.m in Sources */,
 				12BDFF021B67BB580068A1DC /* GagTableViewController.swift in Sources */,
-				12BDFEF71B67BB0A0068A1DC /* FDSlideBar.m in Sources */,
 				12BDFEEC1B67BB0A0068A1DC /* MJRefreshBackStateFooter.m in Sources */,
-				12BDFEF81B67BB0A0068A1DC /* FDSlideBarItem.m in Sources */,
 				12BDFEF11B67BB0A0068A1DC /* MJRefreshConst.m in Sources */,
 				12BDFEE91B67BB0A0068A1DC /* MJRefreshAutoStateFooter.m in Sources */,
 				12BDFEE41B67BB0A0068A1DC /* MJRefreshComponent.m in Sources */,
@@ -530,10 +569,12 @@
 				12BDFEF41B67BB0A0068A1DC /* UIView+MJExtension.m in Sources */,
 				12BDFEEA1B67BB0A0068A1DC /* MJRefreshBackGifFooter.m in Sources */,
 				12BDFEE31B67BB0A0068A1DC /* MJRefreshBackFooter.m in Sources */,
+				121432F41B68AB84009073FE /* WeChatActivityGeneral.swift in Sources */,
 				12BDFF011B67BB580068A1DC /* GagItem.swift in Sources */,
 				12BDFEE81B67BB0A0068A1DC /* MJRefreshAutoNormalFooter.m in Sources */,
 				12BDFE781B67BA6E0068A1DC /* AppDelegate.swift in Sources */,
 				12BDFEED1B67BB0A0068A1DC /* MJRefreshGifHeader.m in Sources */,
+				121432E91B689FEE009073FE /* HZPhotoBrowserView.m in Sources */,
 				12BDFEFB1B67BB460068A1DC /* CommentsViewController.swift in Sources */,
 				12BDFEEB1B67BB0A0068A1DC /* MJRefreshBackNormalFooter.m in Sources */,
 				12BDFEE51B67BB0A0068A1DC /* MJRefreshFooter.m in Sources */,
@@ -661,7 +702,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Boluoboluomi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Boluoboluomi/WeChatSharing/Resources",
+				);
+				PRODUCT_NAME = "菠萝菠萝蜜";
 				SWIFT_OBJC_BRIDGING_HEADER = Boluoboluomi/bridge.h;
 			};
 			name = Debug;
@@ -674,7 +719,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Boluoboluomi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Boluoboluomi/WeChatSharing/Resources",
+				);
+				PRODUCT_NAME = "菠萝菠萝蜜";
 				SWIFT_OBJC_BRIDGING_HEADER = Boluoboluomi/bridge.h;
 			};
 			name = Release;
