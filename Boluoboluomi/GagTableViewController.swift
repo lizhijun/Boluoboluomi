@@ -10,7 +10,11 @@ import UIKit
 import Alamofire
 import IJReachability
 import SDWebImage
-import Social
+//import SwiftyJSON
+//import FLAnimatedImage
+import SwiftyDrop
+//import FMDB
+import Gifu
 
 class GagTableViewController: UITableViewController {
     
@@ -39,7 +43,7 @@ class GagTableViewController: UITableViewController {
             self.tableView.header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "headerRefresh")
             self.tableView.footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: "footerRefresh")
         } else {
-            ProgressHUD.showError("网络不可用")
+            Drop.down("网络好像有点问题", state: .Error)
         }
 
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -69,7 +73,12 @@ class GagTableViewController: UITableViewController {
         //cell.detailTextLabel.text = gagItem.gagID as String
         
         let url = NSURL(string: gagItem.gagThumb as String)
-        cell.thumbImageView?.sd_setImageWithURL(url, placeholderImage: UIImage(named: "default.png"))
+        //cell.thumbImageView?.sd_setImageWithURL(url, placeholderImage: UIImage(named: "default.png"))
+        
+        //println(url)
+        
+        cell.thumbImageView?.animateWithImage(named: "11.gif")
+        cell.thumbImageView.startAnimating()
         
         
         cell.scoreLabel.text = gagItem.gagScore as String + " 分"
@@ -95,6 +104,11 @@ class GagTableViewController: UITableViewController {
     
     @IBAction func share(sender: AnyObject) {
         
+        let activityView = UIActivityViewController(
+            activityItems: ["http://www.boluoboluomi.com/logo.png","WeChat Sharing", "http://www.boluoboluomi.com/"],
+            applicationActivities: [WeChatSessionActivity(), WeChatMomentsActivity()])
+        
+        self.presentViewController(activityView, animated: true, completion: nil)
         /*
         var controller:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeSinaWeibo)
         controller.setInitialText("一起来swift吧！")
@@ -104,9 +118,10 @@ class GagTableViewController: UITableViewController {
     
     func loadDataSource(page:Int){
         
-        Alamofire.request(.GET, "http://g.boluoboluomi.com/api/fresh?per_page=15&page_th=\(page)")
+        Alamofire.request(.GET, "http://g.boluoboluomi.com/api/fresh?per_page=5&page_th=\(page)")
             .responseJSON { _, _, json, _ in
                 //println(json!)
+                
                 let GagDataSource = json!["data"] as! NSArray
                 var CurrentGagData = NSMutableArray()
                 

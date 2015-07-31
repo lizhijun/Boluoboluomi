@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //use your AppID from dev.wechat.com to replace YOUR_WECHAT_APPID
-        WXApi.registerApp("YOUR_WECHAT_APPID")
+        WXApi.registerApp("wx9724872341a77b68")
         
         // Override point for customization after application launch.
         return true

@@ -16,6 +16,7 @@
 		121432F51B68AB84009073FE /* WeChatMomentsActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121432F11B68AB84009073FE /* WeChatMomentsActivity.swift */; };
 		121432F61B68AB84009073FE /* WeChatSessionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121432F21B68AB84009073FE /* WeChatSessionActivity.swift */; };
 		1216CE7D1B68867000B10DAD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1216CE7C1B68867000B10DAD /* Cartfile */; };
+		1287D1E21B6B157D00C81CE9 /* 11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1287D1E11B6B157D00C81CE9 /* 11.gif */; };
 		12BDFE781B67BA6E0068A1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFE771B67BA6E0068A1DC /* AppDelegate.swift */; };
 		12BDFE7A1B67BA6E0068A1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFE791B67BA6E0068A1DC /* ViewController.swift */; };
 		12BDFE821B67BA6E0068A1DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12BDFE801B67BA6E0068A1DC /* LaunchScreen.xib */; };
@@ -80,6 +81,7 @@
 		121432F11B68AB84009073FE /* WeChatMomentsActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatMomentsActivity.swift; sourceTree = "<group>"; };
 		121432F21B68AB84009073FE /* WeChatSessionActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatSessionActivity.swift; sourceTree = "<group>"; };
 		1216CE7C1B68867000B10DAD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		1287D1E11B6B157D00C81CE9 /* 11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11.gif; sourceTree = "<group>"; };
 		12BDFE721B67BA6E0068A1DC /* 菠萝菠萝蜜.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "菠萝菠萝蜜.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BDFE761B67BA6E0068A1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12BDFE771B67BA6E0068A1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				12BDFF041B67BB600068A1DC /* SettingTableViewController.swift */,
 				12F968461B67C8500054B6DC /* CustomTableViewCell.swift */,
 				12BDFEFC1B67BB580068A1DC /* DiscoverTableViewController.swift */,
+				1287D1E11B6B157D00C81CE9 /* 11.gif */,
 				12BDFEFD1B67BB580068A1DC /* GagItem.swift */,
 				12BDFEFE1B67BB580068A1DC /* GagTableViewController.swift */,
 				12BDFF061B67BB970068A1DC /* Images.xcassets */,
@@ -480,6 +483,7 @@
 				121432EA1B689FEE009073FE /* whiteplaceholder.png in Resources */,
 				12BDFEF51B67BB0A0068A1DC /* ProgressHUD.bundle in Resources */,
 				12BDFF071B67BB970068A1DC /* Images.xcassets in Resources */,
+				1287D1E21B6B157D00C81CE9 /* 11.gif in Resources */,
 				12BDFEAA1B67BADF0068A1DC /* Podfile in Resources */,
 				12BDFEF01B67BB0A0068A1DC /* MJRefresh.bundle in Resources */,
 			);
@@ -700,6 +704,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Boluoboluomi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -717,6 +725,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Boluoboluomi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

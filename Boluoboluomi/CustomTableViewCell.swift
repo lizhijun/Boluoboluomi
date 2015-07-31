@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import Gifu
 
 class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var thumbImageView: UIImageView!
+    @IBOutlet weak var thumbImageView: AnimatableImageView! //UIImageView!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
     
