@@ -30,12 +30,20 @@ class GagTableViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
     
+    override func viewWillLayoutSubviews() {
+        //var tabFrame = self.tabBar.fr
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        //self.navigationController?.navigationBar.barTintColor = UIColor.darkGrayColor()
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 400
+        self.navigationController?.navigationBar.barTintColor = UIColor.darkGrayColor()
         //self.tableView.tableFooterView = UIView()
+        
+        self.view.backgroundColor=UIColor.blueColor()
+        self.title="新闻"
         
         if IJReachability.isConnectedToNetwork() {
             
@@ -45,9 +53,6 @@ class GagTableViewController: UITableViewController {
         } else {
             Drop.down("网络好像有点问题", state: .Error)
         }
-
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 400
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,12 +78,13 @@ class GagTableViewController: UITableViewController {
         //cell.detailTextLabel.text = gagItem.gagID as String
         
         let url = NSURL(string: gagItem.gagThumb as String)
-        //cell.thumbImageView?.sd_setImageWithURL(url, placeholderImage: UIImage(named: "default.png"))
+        cell.thumbImageView?.sd_setImageWithURL(url, placeholderImage: UIImage(named: "default.png"))
         
         //println(url)
         
-        cell.thumbImageView?.animateWithImage(named: "11.gif")
-        cell.thumbImageView.startAnimating()
+        //cell.thumbImageView?.animateWithImage(named: "11.gif")
+        //cell.thumbImageView?.prepareForAnimation(imageNamed: "gif.gif")
+        //cell.thumbImageView.startAnimating()
         
         
         cell.scoreLabel.text = gagItem.gagScore as String + " 分"
@@ -102,6 +108,10 @@ class GagTableViewController: UITableViewController {
         self.tableView.footer.endRefreshing()
     }
     
+    @IBAction func uploadPhoto(sender: AnyObject) {
+        
+        println("upload")
+    }
     @IBAction func share(sender: AnyObject) {
         
         let activityView = UIActivityViewController(
