@@ -17,8 +17,8 @@
 		121432F61B68AB84009073FE /* WeChatSessionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121432F21B68AB84009073FE /* WeChatSessionActivity.swift */; };
 		1216CE7D1B68867000B10DAD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1216CE7C1B68867000B10DAD /* Cartfile */; };
 		1287D1E21B6B157D00C81CE9 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1287D1E11B6B157D00C81CE9 /* gif.gif */; };
-		12A8129C1B6B706D00A34F58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8129B1B6B706D00A34F58 /* LoginViewController.swift */; };
-		12A8129E1B6B708700A34F58 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8129D1B6B708700A34F58 /* RegisterViewController.swift */; };
+		12A8129C1B6B706D00A34F58 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8129B1B6B706D00A34F58 /* LoginController.swift */; };
+		12A8129E1B6B708700A34F58 /* RegController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8129D1B6B708700A34F58 /* RegController.swift */; };
 		12A812A01B6B724D00A34F58 /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8129F1B6B724D00A34F58 /* UploadPhotoViewController.swift */; };
 		12BDFE781B67BA6E0068A1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFE771B67BA6E0068A1DC /* AppDelegate.swift */; };
 		12BDFE7A1B67BA6E0068A1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFE791B67BA6E0068A1DC /* ViewController.swift */; };
@@ -53,6 +53,8 @@
 		12BDFF051B67BB600068A1DC /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDFF041B67BB600068A1DC /* SettingTableViewController.swift */; };
 		12BDFF071B67BB970068A1DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BDFF061B67BB970068A1DC /* Images.xcassets */; };
 		12BDFF091B67BBBA0068A1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BDFF081B67BBBA0068A1DC /* Main.storyboard */; };
+		12D088221B6F1F5C00D1A14A /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D088211B6F1F5C00D1A14A /* ServiceApi.swift */; };
+		12D088251B6F2BCC00D1A14A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D088241B6F2BCC00D1A14A /* Utility.swift */; };
 		12F968471B67C8500054B6DC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F968461B67C8500054B6DC /* CustomTableViewCell.swift */; };
 		E56CADC84A0A836CEAD1B191 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A432C44C0C46096793631F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -85,8 +87,8 @@
 		121432F21B68AB84009073FE /* WeChatSessionActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatSessionActivity.swift; sourceTree = "<group>"; };
 		1216CE7C1B68867000B10DAD /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		1287D1E11B6B157D00C81CE9 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
-		12A8129B1B6B706D00A34F58 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		12A8129D1B6B708700A34F58 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		12A8129B1B6B706D00A34F58 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		12A8129D1B6B708700A34F58 /* RegController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegController.swift; sourceTree = "<group>"; };
 		12A8129F1B6B724D00A34F58 /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = "<group>"; };
 		12BDFE721B67BA6E0068A1DC /* 菠萝菠萝蜜.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "菠萝菠萝蜜.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BDFE761B67BA6E0068A1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +148,8 @@
 		12BDFF041B67BB600068A1DC /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		12BDFF061B67BB970068A1DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		12BDFF081B67BBBA0068A1DC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		12D088211B6F1F5C00D1A14A /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		12D088241B6F2BCC00D1A14A /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		12F968461B67C8500054B6DC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2A78FA542A696BF5A1963713 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		97A432C44C0C46096793631F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +215,7 @@
 		1287D1E61B6B29AE00C81CE9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				12D088211B6F1F5C00D1A14A /* ServiceApi.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -221,9 +226,9 @@
 				12BDFEFE1B67BB580068A1DC /* GagTableViewController.swift */,
 				12BDFEFC1B67BB580068A1DC /* DiscoverTableViewController.swift */,
 				12BDFE791B67BA6E0068A1DC /* ViewController.swift */,
-				12A8129B1B6B706D00A34F58 /* LoginViewController.swift */,
+				12A8129B1B6B706D00A34F58 /* LoginController.swift */,
 				12A8129F1B6B724D00A34F58 /* UploadPhotoViewController.swift */,
-				12A8129D1B6B708700A34F58 /* RegisterViewController.swift */,
+				12A8129D1B6B708700A34F58 /* RegController.swift */,
 				12BDFEFA1B67BB460068A1DC /* CommentsViewController.swift */,
 				12BDFF041B67BB600068A1DC /* SettingTableViewController.swift */,
 			);
@@ -309,6 +314,7 @@
 			children = (
 				1287D1EC1B6B2B3C00C81CE9 /* Application */,
 				1287D1E91B6B2A5C00C81CE9 /* images */,
+				12D088231B6F2BBA00D1A14A /* Utility */,
 				1287D1E71B6B29E000C81CE9 /* Controller */,
 				1287D1E81B6B2A1800C81CE9 /* Views */,
 				1287D1EA1B6B2A8600C81CE9 /* Models */,
@@ -448,6 +454,14 @@
 				12BDFEDB1B67BB0A0068A1DC /* ProgressHUD.m */,
 			);
 			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		12D088231B6F2BBA00D1A14A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				12D088241B6F2BCC00D1A14A /* Utility.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		57AE4C31FF9A54FE277B36E6 /* Frameworks */ = {
@@ -630,6 +644,7 @@
 				121432E81B689FEE009073FE /* HZPhotoBrowser.m in Sources */,
 				12BDFE7A1B67BA6E0068A1DC /* ViewController.swift in Sources */,
 				121432F61B68AB84009073FE /* WeChatSessionActivity.swift in Sources */,
+				12D088251B6F2BCC00D1A14A /* Utility.swift in Sources */,
 				12BDFEEF1B67BB0A0068A1DC /* MJRefreshStateHeader.m in Sources */,
 				121432E71B689FEE009073FE /* HZIndicatorView.m in Sources */,
 				12BDFF001B67BB580068A1DC /* DiscoverTableViewController.swift in Sources */,
@@ -640,8 +655,9 @@
 				12BDFEF11B67BB0A0068A1DC /* MJRefreshConst.m in Sources */,
 				12BDFEE91B67BB0A0068A1DC /* MJRefreshAutoStateFooter.m in Sources */,
 				12BDFEE41B67BB0A0068A1DC /* MJRefreshComponent.m in Sources */,
-				12A8129E1B6B708700A34F58 /* RegisterViewController.swift in Sources */,
+				12A8129E1B6B708700A34F58 /* RegController.swift in Sources */,
 				12BDFEE61B67BB0A0068A1DC /* MJRefreshHeader.m in Sources */,
+				12D088221B6F1F5C00D1A14A /* ServiceApi.swift in Sources */,
 				12BDFEEE1B67BB0A0068A1DC /* MJRefreshNormalHeader.m in Sources */,
 				12BDFEF31B67BB0A0068A1DC /* UIScrollView+MJRefresh.m in Sources */,
 				12BDFEF41B67BB0A0068A1DC /* UIView+MJExtension.m in Sources */,
@@ -656,7 +672,7 @@
 				121432E91B689FEE009073FE /* HZPhotoBrowserView.m in Sources */,
 				12BDFEFB1B67BB460068A1DC /* CommentsViewController.swift in Sources */,
 				12BDFEEB1B67BB0A0068A1DC /* MJRefreshBackNormalFooter.m in Sources */,
-				12A8129C1B6B706D00A34F58 /* LoginViewController.swift in Sources */,
+				12A8129C1B6B706D00A34F58 /* LoginController.swift in Sources */,
 				12BDFEE51B67BB0A0068A1DC /* MJRefreshFooter.m in Sources */,
 				12BDFEE71B67BB0A0068A1DC /* MJRefreshAutoGifFooter.m in Sources */,
 				12F968471B67C8500054B6DC /* CustomTableViewCell.swift in Sources */,

@@ -43,7 +43,7 @@ class GagTableViewController: UITableViewController {
         //self.tableView.tableFooterView = UIView()
         
         self.view.backgroundColor=UIColor.blueColor()
-        self.title="新闻"
+        //self.title="新闻"
         
         if IJReachability.isConnectedToNetwork() {
             
@@ -109,9 +109,19 @@ class GagTableViewController: UITableViewController {
     }
     
     @IBAction func uploadPhoto(sender: AnyObject) {
+    
+        var loginController:LoginController = Utility.GetViewController("loginController")
         
-        println("upload")
+        self.navigationController?.pushViewController(loginController, animated: true)
     }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
+        if identifier == "toUploadPhoto" {
+            
+        }
+        return true
+    }
+    
     @IBAction func share(sender: AnyObject) {
         
         let activityView = UIActivityViewController(

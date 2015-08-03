@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  Boluoboluomi
 //
 //  Created by 李志军 on 15/7/31.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "注册"
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

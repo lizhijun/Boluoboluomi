@@ -10,10 +10,12 @@ import UIKit
 
 class UploadPhotoViewController: UIViewController {
 
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var contentField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //self.title = "上传图片"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +24,11 @@ class UploadPhotoViewController: UIViewController {
     }
     
 
+    @IBAction func publishClick(sender: AnyObject) {
+        
+        println(self.titleField.text)
+    }
+    
     /*
     // MARK: - Navigation
 

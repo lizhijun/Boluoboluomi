@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  LoginViewController.swift
 //  Boluoboluomi
 //
 //  Created by 李志军 on 15/7/31.
@@ -8,12 +8,15 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class LoginController: UIViewController {
 
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "登录"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +25,23 @@ class RegisterViewController: UIViewController {
     }
     
 
+    
+    @IBAction func userLogin(sender: UIButton) {
+        
+        println(username.text)
+    }
+    
+    
+    @IBAction func regAction(sender: AnyObject) {
+        
+        
+        var regController:RegController = Utility.GetViewController("regController")
+        
+        self.navigationController?.pushViewController(regController, animated: true)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
